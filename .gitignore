@@ -1,5 +1,5 @@
-**/bin/*
-**/obj/*
-.vs/*
-**/.vs/*
-**/node_modules/*
+StarCraft.API/StarCraft.API/bin/*
+StarCraft.API/StarCraft.API/obj/*
+StarCraft.API/.vs/*
+StarCraft.API/StarCraft.API/wwwroot/node_modules/*
+StarCraft.API/StarCraft.API/wwwroot/dist/*

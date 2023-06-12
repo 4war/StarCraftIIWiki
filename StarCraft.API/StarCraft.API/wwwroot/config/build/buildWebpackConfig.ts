@@ -7,13 +7,13 @@ import { buildPlugins } from "./buildPlugins";
 import { buildDevServer } from "./buildDevServer";
 
 export function buildWebpackConfig(options: BuildOptions): webpack.Configuration {
-    const {paths, mode} = options;
+    const { paths, mode, isDevelopment } = options;
 
     return {
         mode,
         entry: {
             bundle: paths.entry
-        }, 
+        },
         module: {
             rules: buildLoaders(),
         },
@@ -29,7 +29,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         // https://webpack.js.org/guides/development/
         // Чтобы после автосборки можно было найти ошибку в конкретном файле, 
         // когда все они будут собраны в единый файл
-        devtool: 'inline-source-map',
-        devServer: buildDevServer(options),
+        devtool: isDevelopment ? 'inline-source-map' : undefined,
+        devServer: isDevelopment ? buildDevServer(options) : undefined,
     }
 }

@@ -16,7 +16,7 @@
         // делает возможным return (
         //      <div> some text </div>
         // );
-        "jsx": "react",
+        "jsx": "react-jsx",
 
         // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
         "allowJs": true,

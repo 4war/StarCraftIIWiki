@@ -1,3 +1,3 @@
 import { someFn } from "./test";
 
-someFn();
+console.log(someFn(4));

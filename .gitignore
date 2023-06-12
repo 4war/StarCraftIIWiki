@@ -3,3 +3,4 @@ StarCraft.API/StarCraft.API/obj/*
 StarCraft.API/.vs/*
 StarCraft.API/StarCraft.API/wwwroot/node_modules/*
 StarCraft.API/StarCraft.API/wwwroot/dist/*
+StarCraft.API/StarCraft.API/wwwroot/build/*

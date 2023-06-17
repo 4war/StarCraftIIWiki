@@ -19,6 +19,7 @@ export default (env: BuildEnv) => {
         paths: paths,
         isDevelopment: isDevelopment,
         port: env.port,
+        
     });
 
     return config;

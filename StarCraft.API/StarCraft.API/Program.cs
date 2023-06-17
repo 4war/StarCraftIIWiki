@@ -11,5 +11,4 @@ app.UseDefaultFiles(options);
 
 app.UseFileServer();
 
-
 app.Run();
